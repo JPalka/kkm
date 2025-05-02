@@ -1,0 +1,8 @@
+[project.scripts]
+kkm = "kkm.cli:app"
+[project]
+name = "kkm"
+version = "0.0.0"
+dependencies = [
+  "typer"
+]

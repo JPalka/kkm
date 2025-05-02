@@ -1,0 +1,2 @@
+[console_scripts]
+kkm = kkm.cli:app
