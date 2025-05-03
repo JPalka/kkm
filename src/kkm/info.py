@@ -22,6 +22,7 @@ def info(
         if notify:
             os.system('No ticket')  
     else:
-        print(f"Ticket active until: {tickets[-1].expires_at}")
+        expires_at = tickets[-1].expires_at
+        print(f"Ticket active until: {expires_at}")
         if notify:
-            os.system(f'notify-send "Ticket active until: {tickets[-1].expires_at}"')  
+            os.system(f'notify-send "Ticket active until: {expires_at}"')  

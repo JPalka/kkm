@@ -13,4 +13,3 @@ class Ticket:
     lines_zone_1: str
     lines_zone_2: str
     lines_zone_3: str
-

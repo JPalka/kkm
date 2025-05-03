@@ -1,2 +1,6 @@
 .venv
 *.egg-info
+/__pycache__/
+__pycache__
+*.pyc
+*.cpython-313.pyc
