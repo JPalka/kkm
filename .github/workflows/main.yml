@@ -31,7 +31,7 @@ jobs:
             pip3 install .
             # python3 manage.py makemigrations
             # python3 migrate
-            systemctl restart kkm_production.service
+            systemctl --user restart kkm_production.service
             # cd /home/azureuser/github/canopus-platform
             # export NODE_OPTIONS=--max-old-space-size=4096
             # cd /home/azureuser/github/canopus-platform
