@@ -1,9 +1,10 @@
 import datetime
 from itertools import batched
-from html.parser import HTMLParser
+
 from bs4 import BeautifulSoup
-from .ticket import Ticket
 import requests
+
+from .ticket import Ticket
 
 class Api:
     user_agent = 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0'
@@ -48,6 +49,6 @@ class Api:
         return ticket_info.text
 
     def extract_value(self, value):
-        return value.b.string
+        return value.b.text.strip()
 
 
