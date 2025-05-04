@@ -25,7 +25,7 @@ jobs:
             # Your server commands go here. Replace these commands with those relevant to your project.
 
             cd  /var/www/kkm
-            source ../venv/bin/activate
+            # source ../venv/bin/activate
             git checkout master
             git pull
             pip3 install .

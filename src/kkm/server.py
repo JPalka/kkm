@@ -32,5 +32,5 @@ def server(
     port: Annotated[str, typer.Option(help="Port to run server on(default 5000)")] = "5000",
     debug: Annotated[bool, typer.Option(help="Run server in debug mode")] = False,
 ):
-    print("Starting kkm info server: ")
+    print("Starting kkm server: ")
     server_app.run(debug=debug)
