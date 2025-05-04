@@ -7,6 +7,5 @@ dependencies = [
   "typer",
   "flask",
   "bs4",
-  "requests",
-  "itertools"
+  "requests"
 ]

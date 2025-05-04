@@ -29,7 +29,7 @@ def tickets_latest(client_number):
     return jsonify(data)
 
 def server(
-    port: Annotated[number, typer.Option(help="Port to run server on(default 5000)")] = 5000,
+    port: Annotated[str, typer.Option(help="Port to run server on(default 5000)")] = "5000",
     debug: Annotated[bool, typer.Option(help="Run server in debug mode")] = False,
 ):
     print("Starting kkm info server: ")
