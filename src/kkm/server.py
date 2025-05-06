@@ -12,7 +12,7 @@ def hello_world():
     data = {'data': 'hello world'}
     return data
 
-@server_app.route("/client/<client_number>/tickets")
+@server_app.route("/clients/<client_number>/tickets")
 def tickets_index(client_number):
     date = request.args.get('date', datetime.datetime.today().strftime("%Y-%m-%d"))
     x = Api(client_number, date, {'debug': False})
@@ -20,7 +20,7 @@ def tickets_index(client_number):
     data = tickets
     return jsonify(data)
 
-@server_app.route("/client/<client_number>/tickets/latest")
+@server_app.route("/clients/<client_number>/tickets/latest")
 def tickets_latest(client_number):
     date = request.args.get('date', datetime.datetime.today().strftime("%Y-%m-%d"))
     x = Api(client_number, date, {'debug': False})
